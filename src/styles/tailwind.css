@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin '@tailwindcss/typography';
 @plugin '@tailwindcss/forms';
@@ -6,45 +6,47 @@
 @import "tailwindcss-intersect";
 
 @font-face {
-  font-family: 'Honk';
-  src: url('/fonts/Honk-Regular-VariableFont_MORF,SHLN.ttf') format('truetype');
+  font-family: "Kanit";
+  src: url("/fonts/Kanit-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Quicksand';
-  src: url('/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+  font-family: "Catemaran";
+  src: url("/fonts/Catamaran-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Domine';
-  src: url('/fonts/Domine-Regular.ttf') format('truetype');
+  font-family: "Titillium Web";
+  src: url("/fonts/TitilliumWeb-Regular.ttf") format("truetype");
 }
 
 @theme {
   /* Her tilføjes theme variable // tokens */
 
   /*Farver */
-  --color-primary-400: #00E4F5;
-  --color-primary-500: #006269;
-  --color-primary-600: #006D75;
-  --color-secondary-400: #F5E400;
-  --color-secondary-500: #F5A600;
-  --color-secondary-600: #F57A00;
+  --color-primary-500: #fef3ea;
+  --color-primary-600: #fde9d7;
+  --color-secondary-300: #b3c58e;
+  --color-secondary-400: #a3b481;
+  --color-secondary-500: #7b944f;
+  --color-secondary-600: #5f753b;
+  --color-accent-300: #f1b476;
+  --color-accent-400: #e39d54;
+  --color-accent-500: #dc8233;
+  --color-accent-600: #cc6a28;
+  --color-text-500: #492B0B
 
   /*Typografi */
-  --font-display: 'Honk', monospace;
-  --font-sans: 'Quicksand', sans-serif;
-  --font-serif: 'Domine', serif;
+  --font-sans: "Kanit", sans-serif;
+  --font-alt: "Catamaran", sans-serif;
+  --font-serif: "Titillium Web", serif;
 }
 
 @layer base {
-
 }
 
-@layer components{
-
+@layer components {
 }
 
-@layer utilities{
-  
+@layer utilities {
 }
