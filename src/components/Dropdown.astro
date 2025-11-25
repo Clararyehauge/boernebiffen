@@ -15,7 +15,7 @@ const { title = "Titel", items = [] } = Astro.props;
   </button>
 
   <!-- Dropdown liste -->
-  <ul class="absolute left-0 right-0 bg-accent-600 rounded-md mt-2 p-4 space-y-2 shadow-[0_4px_12px_rgba(0,0,0,0.25)] hidden z-10">
+  <ul class="absolute left-0 right-0 bg-accent-600 rounded-md mt-1 p-4 space-y-2 shadow-[0_4px_12px_rgba(0,0,0,0.25)] hidden z-10">
     {items.map((item) => <li class="text-black text-lg cursor-pointer hover:opacity-70">{item}</li>)}
   </ul>
 </div>

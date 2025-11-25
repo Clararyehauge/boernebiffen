@@ -12,15 +12,41 @@ import FilmCard from "../components/FilmCard.astro";
 <MainLayout title="Titel">
   <main class="container mx-auto p-4">
     <section>
-      <h1>Hvad søger du?</h1>
-      <div>
+      <div class="text-center mt-10 mb-10">
+        <Heading htmlheading="h1" size="large">Hvad søger du?</Heading>
+      </div>
+      <div class="flex gap-5 justify-center mb-30">
         <Dropdown title="Alder" items={["3 år", "4 år", "5 år", "6 år", "7år"]} />
         <Dropdown title="Genre" items={["Seneste nyt", "Til de yngste", "Til de ældste"]} />
         <Dropdown title="Varighed" items={["5 min", "10 min", "20 min", "30 min", "45 min", "+60 min"]} />
       </div>
     </section>
-    <section class="Cardcontainer w-screen relative left-1/2 -translate-x-1/2">
+    <section class="Cardcontainer w-screen relative left-1/2 -translate-x-1/2 mb-10">
       <CardContainer title="Se videre">
+        <FilmCard image="/lillefro.png" alt="Produkt 1" title="Lille Frø" description="8" />
+        <FilmCard image="/2.png" alt="Produkt 1" title="Ræven og nissen" description="9" />
+        <FilmCard image="/3.png" alt="Produkt 1" title="Flagermusen" description="4" />
+        <FilmCard image="/4.png" alt="Produkt 1" title="En lille smule" description="9" />
+      </CardContainer>
+    </section>
+    <section class="Cardcontainer w-screen relative left-1/2 -translate-x-1/2 mb-10">
+      <CardContainer title="Nyheder">
+        <FilmCard image="/lillefro.png" alt="Produkt 1" title="Lille Frø" description="8" />
+        <FilmCard image="/2.png" alt="Produkt 1" title="Ræven og nissen" description="9" />
+        <FilmCard image="/3.png" alt="Produkt 1" title="Flagermusen" description="4" />
+        <FilmCard image="/4.png" alt="Produkt 1" title="En lille smule" description="9" />
+      </CardContainer>
+    </section>
+    <section class="Cardcontainer w-screen relative left-1/2 -translate-x-1/2 mb-10">
+      <CardContainer title="For de yngste">
+        <FilmCard image="/lillefro.png" alt="Produkt 1" title="Lille Frø" description="8" />
+        <FilmCard image="/2.png" alt="Produkt 1" title="Ræven og nissen" description="9" />
+        <FilmCard image="/3.png" alt="Produkt 1" title="Flagermusen" description="4" />
+        <FilmCard image="/4.png" alt="Produkt 1" title="En lille smule" description="9" />
+      </CardContainer>
+    </section>
+    <section class="Cardcontainer w-screen relative left-1/2 -translate-x-1/2 mb-10">
+      <CardContainer title="For de ældste">
         <FilmCard image="/lillefro.png" alt="Produkt 1" title="Lille Frø" description="8" />
         <FilmCard image="/2.png" alt="Produkt 1" title="Ræven og nissen" description="9" />
         <FilmCard image="/3.png" alt="Produkt 1" title="Flagermusen" description="4" />
