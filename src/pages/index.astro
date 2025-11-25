@@ -10,14 +10,62 @@ import Button from "../components/Button.astro";
 
 <MainLayout title="Titel">
   <main class="container mx-auto p-4">
-    <section>
-      <Heading htmlheading="h1">UDFORSK EN VERDEN AF LÆRERIGE VIDEOER</Heading>
+    <section class="text-center mx-auto relative">
+      <Heading htmlheading="h1"
+        >UDFORSK EN VERDEN AF
+        <span class="text-blue-700">L</span>
+        <span class="text-orange-700">Æ</span>
+        <span class="text-purple-700">R</span>
+        <span class="text-red-700">E</span>
+        <span class="text-yellow-500">R</span>
+        <span class="text-green-700">I</span>
+        <span class="text-blue-700">G</span>
+        <span class="text-pink-700">E</span>
+        VIDEOER</Heading
+      >
+      <button>Knap</button>
+      <div class="absolut w-25 md:w-60">
+        <img src="src/assets/images/mus2.svg" alt="mus" />
+      </div>
+      <div class="absolute w-23 md:w-55 top-20 md:top-5 right-0">
+        <img src="src/assets/images/billefjernsyn.png" alt="billefjernsyn" />
+      </div>
+      <div class="absolute w-22 md:w-45 top-47 md:top-55 right-15 md:right-60">
+        <img src="src/assets/images/popcorn2.svg" alt="popcorn" />
+      </div>
     </section>
-    <section>
-      <Text teksttype="brødtekst">DOWNLOAD BØRNEBIFFEN PÅ DIN ENHED</Text>
-      <div>
-        <button>Download</button>
-        <button>Download</button>
+    <section class="absolute top-65 md:top-70 left-33 md:left-115">
+      <p class="text-[12px] md:text-[26px]">DOWNLOAD BØRNEBIFFEN PÅ DIN ENHED</p>
+    </section>
+    <div class="absolute top-58 left-26 md:top-65 md:left-106 animate-jump animate-infinite animate-duration-[2000ms] animate-delay-0 animate-ease-linear">
+      <img src="src/assets/images/pyntvenstre.svg" alt="pyntvenstre" />
+    </div>
+    <div class="absolute top-58 right-25 md:top-65 md:right-113 animate-jump animate-infinite animate-duration-[2000ms] animate-delay-0 animate-ease-linear">
+      <img src="src/assets/images/pynthøjre.svg" alt="pynthøjre" />
+    </div>
+    <section class="p-10 md:p-10">
+      <div class="text-center mx-auto pt-15 pb-10">
+        <Heading htmlheading="h1"
+          >DESIGNET TIL
+          <span class="text-yellow-500">B</span>
+          <span class="text-green-700">Ø</span>
+          <span class="text-blue-700">R</span>
+          <span class="text-pink-700">N</span> AF DANSKE BIOGRAFER</Heading
+        >
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div>
+          <h2>Støtter dansk og nordisk børnekultur</h2>
+          <p>Vi viser kortfilm fra danske animationsskoler, talentfulde børnefilmskabere og nordiske studier. Det giver variation i stil og fortællinger, styrker den kulturelle forankring og giver børn adgang til mere kreative og originale film end dem, man finder i mainstream universer.</p>
+        </div>
+        <div>
+          <h2>Pædagogisk kuratering</h2>
+          <p>Alle film på Børnebiffen er nøje kurateret med fokus på læring, følelser og udvikling. Filmene giver mulighed for samtaler efterfølgende og understøtter temaer som empati, mod, fantasi og venskab. Indholdet er skabt til børn – ikke styret af kommercielle trends.</p>
+        </div>
+        <div>
+          <h2>Trygt og overskueligt miljø</h2>
+          <p>I Børnebiffen har vi skabt et online miljø, der er mindre overstimulerende end de almindelige streamingtjenester. Lyden er rolig, udtrykket er enkelt, og stemningen er tryg. Her må børn bevæge sig, stille spørgsmål og reagere frit – uden at blive overvældet.</p>
+        </div>
       </div>
     </section>
   </main>
