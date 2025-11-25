@@ -1,15 +1,18 @@
 ---
+import Heading from "./Heading.astro";
+
 const { image = "/card.jpg", alt = "Card image", title, description } = Astro.props;
 ---
 
-<div class="card bg-none w-96">
+<div class="card bg-none w-96 min-w-[260px] flex-shrink-0">
   <figure class="relative inline-block">
     <img class="w-10 h-10 absolute top-2 right-2 z-10" src="/playorange.svg" alt="play knap" />
     <img class="rounded-md" src={image} alt={alt} />
   </figure>
   <div class="mt-1">
-    <h2 class="text-xl font-bold">{title}</h2>
-
+    <div>
+      <Heading htmlheading="h2" size="large3" stylingclasses="font-bold text-[10px] md:text-[20px]">{title}</Heading>
+    </div>
     <div class="flex items-center gap-3 mt-1">
       <div class="scale-150"><img src="/schedule.svg" alt="klokke" /></div>
       <p>{description} min</p>
