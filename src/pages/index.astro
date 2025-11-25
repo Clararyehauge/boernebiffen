@@ -2,7 +2,6 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
-import thumbsup from "../assets/images/thumbsup.png";
 import Heading from "../components/Heading.astro";
 import Text from "../components/Text.astro";
 import Button from "../components/Button.astro";
@@ -14,7 +13,7 @@ import Button from "../components/Button.astro";
       <Heading htmlheading="h1"
         >UDFORSK EN VERDEN AF
         <span class="text-blue-700">L</span>
-        <span class="text-orange-700">Æ</span>
+        <span class="text-orange-600">Æ</span>
         <span class="text-purple-700">R</span>
         <span class="text-red-700">E</span>
         <span class="text-yellow-500">R</span>
@@ -23,8 +22,10 @@ import Button from "../components/Button.astro";
         <span class="text-pink-700">E</span>
         VIDEOER</Heading
       >
-      <button>Knap</button>
-      <div class="absolut w-25 md:w-60">
+      <div class="animate-jump animate-infinite animate-duration-[3000ms] animate-delay-0 animate-ease-linear">
+        <Text><Button>Log in</Button></Text>
+      </div>
+      <div class="absolute w-25 md:w-60 top-35 md:top-30">
         <img src="src/assets/images/mus2.svg" alt="mus" />
       </div>
       <div class="absolute w-23 md:w-55 top-20 md:top-5 right-0">
@@ -34,17 +35,22 @@ import Button from "../components/Button.astro";
         <img src="src/assets/images/popcorn2.svg" alt="popcorn" />
       </div>
     </section>
-    <section class="absolute top-65 md:top-70 left-33 md:left-115">
+    <section class="absolute top-65 md:top-85 left-33 md:left-115">
       <p class="text-[12px] md:text-[26px]">DOWNLOAD BØRNEBIFFEN PÅ DIN ENHED</p>
+      <div class="flex flex-col items-center gap-2 md:gap-3 pt-2 md:pt-4">
+        <img class="w-25 md:w-40" src="src/assets/images/appstore.svg" alt="appstore" />
+        <img class="w-25 md:w-40" src="src/assets/images/googleplay.svg" alt="googleplay" />
+      </div>
     </section>
-    <div class="absolute top-58 left-26 md:top-65 md:left-106 animate-jump animate-infinite animate-duration-[2000ms] animate-delay-0 animate-ease-linear">
+
+    <div class="absolute top-58 left-26 md:top-79 md:left-106 animate-jump animate-infinite animate-duration-[2000ms] animate-delay-0 animate-ease-linear">
       <img src="src/assets/images/pyntvenstre.svg" alt="pyntvenstre" />
     </div>
-    <div class="absolute top-58 right-25 md:top-65 md:right-113 animate-jump animate-infinite animate-duration-[2000ms] animate-delay-0 animate-ease-linear">
+    <div class="absolute top-58 right-25 md:top-79 md:right-113 animate-jump animate-infinite animate-duration-[2000ms] animate-delay-0 animate-ease-linear">
       <img src="src/assets/images/pynthøjre.svg" alt="pynthøjre" />
     </div>
     <section class="p-10 md:p-10">
-      <div class="text-center mx-auto pt-15 pb-10">
+      <div class="text-center mx-auto pt-30 md:pt-80 pb-10">
         <Heading htmlheading="h1"
           >DESIGNET TIL
           <span class="text-yellow-500">B</span>
