@@ -41,8 +41,8 @@
 
 
   /*Typografi */
-  --font-sans: "Kanit", sans-serif;
-  --font-alt: "Catamaran", sans-serif;
+  --font-display: "Catamaran", sans-serif;
+    --font-sans: "Kanit", sans-serif;
   --font-serif: "Titillium Web", serif;
 }
 

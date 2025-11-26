@@ -12,8 +12,8 @@ import FilmCard from "../components/FilmCard.astro";
     <span>Gå tilbage</span>
   </a>
   <main class="container mx-auto p-4">
-    <div class="font-bold mb-5">
-      <Heading htmlheading="h1" size="large2">Rita og krokodille: Skovturen</Heading>
+    <div class="font-bold mb-5 font-kanit">
+      <Heading htmlheading="h1" size="large" font="display">Rita og krokodille: Skovturen</Heading>
     </div>
     <div class="grid md:grid-cols-[2fr_1fr] gap-10 md:gap-20">
       <div class="relative w-fit">
@@ -32,13 +32,15 @@ import FilmCard from "../components/FilmCard.astro";
           <span>Tilladt for alle</span>
         </div>
         <div class="font-bold">
-          <Heading htmlheading="h2" size="large3">Handler om:</Heading>
+          <Heading htmlheading="h2" size="small" font="display">Handler om:</Heading>
         </div>
-        <Text teksttype="brødtekst" size="text-xl"> Vennerne skal ud og samle kastanjer i skoven. Rita formaner Krokodille at blive på stien, så han ikke farer vild. Men da hun ser et helt tæppe af glitrende kastajner glemmer hun alt, hvad hun har sagt. I jagten på de flotte kastajner glemmer hun alt om stien og farer vild. Krokodille hjælper hende at finde tilbage. </Text>
-        <Text teksttype="brødtekst" size="text-xl"> <span class="font-bold"> Instruktør:</span> Siri Melchior (Danmark, 2013) </Text>
+        <div>
+          <Text teksttype="brødtekst" size="text-xl" font="serif"> Vennerne skal ud og samle kastanjer i skoven. Rita formaner Krokodille at blive på stien, så han ikke farer vild. Men da hun ser et helt tæppe af glitrende kastajner glemmer hun alt, hvad hun har sagt. I jagten på de flotte kastajner glemmer hun alt om stien og farer vild. Krokodille hjælper hende at finde tilbage. </Text>
+          <Text teksttype="brødtekst" size="text-xl" font="serif"> <span class="font-bold"> Instruktør:</span> Siri Melchior (Danmark, 2013) </Text>
+        </div>
         <div class="flex items-center gap-3 mt-1">
           <div class="scale-180"><img src="/schedule.svg" alt="klokke" /></div>
-          <Text teksttype="brødtekst" size="text-xl"> 5 min </Text>
+          <Text teksttype="brødtekst" size="text-xl" font="serif"> 5 min </Text>
         </div>
         <div class="inline-block px-4 py-1 bg-none border-2 border-secondary-500 rounded-full text-black">Venskab</div>
         <div class="inline-block px-4 py-1 bg-none border-2 border-secondary-500 rounded-full text-black">Skovture</div>
